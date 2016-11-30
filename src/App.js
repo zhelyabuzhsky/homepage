@@ -9,7 +9,7 @@ class App extends Component {
           <span className="nowrap">Ilya Zhelyabuzhsky</span>
         </h1>
         <nav>
-          <h1>Contacts</h1>
+          <h2>Contacts</h2>
           <ul>
               <li>
                   <span className="nowrap">

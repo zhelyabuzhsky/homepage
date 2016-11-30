@@ -1,76 +1,31 @@
 body {
     font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, Helvetica, Verdana, sans-serif;
     color: #333333;
-    font-size: 20px
+    font-size: 20px;
 }
 
-body a {
-    text-decoration: none
+a {
+    text-decoration: none;
+    color: #08c;
 }
 
-body a:link {
-    color: #08c
-}
-
-body a:hover {
-    color: #08c
-}
-
-body a:visited {
-    color: #08c
-}
-
-body a:visited:hover {
-    color: #08c
-}
-
-body a:focus {
-    outline: medium none
-}
-
-body h1 {
+h1 {
     box-sizing: border-box;
     display: block;
     font-size: 34px;
     font-weight: normal;
     line-height: 40px;
     margin: 0 0 30px;
-    text-rendering: optimizeLegibility
 }
 
-body span.nowrap {
-    white-space: nowrap
+span.nowrap {
+    white-space: nowrap;
 }
 
-body div.container {
+div.container {
     box-sizing: border-box;
     display: block;
     margin: 0 211px;
     padding-top: 80px;
-    width: 760px
-}
-
-body nav {
-    border-left: 5px solid #179cde;
-    padding-left: 20px
-}
-
-body nav h1 {
-    color: #757575;
-    font-size: 15px;
-    font-weight: normal;
-    line-height: 16px;
-    margin: 0;
-    padding-bottom: 12px;
-    text-rendering: optimizeLegibility
-}
-
-body nav ul {
-    margin: 0;
-    padding: 0
-}
-
-body nav ul li {
-    line-height: 40px;
-    list-style: none outside none
+    width: 760px;
 }

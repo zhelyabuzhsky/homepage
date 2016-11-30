@@ -1,0 +1,23 @@
+nav {
+    border-left: 5px solid #179cde;
+    padding-left: 20px;
+}
+
+nav h2 {
+    color: #757575;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 16px;
+    margin: 0;
+    padding-bottom: 12px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    line-height: 40px;
+    list-style: none outside none;
+}
