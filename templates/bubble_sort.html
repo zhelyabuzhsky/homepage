@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}Bubble sort{% endblock %}
+
+{% block content %}
+    <h1>Bubble sort</h1>
+    <p>
+        <a href="https://en.wikipedia.org/wiki/Bubble_sort">https://en.wikipedia.org/wiki/Bubble_sort</a>
+    </p>
+    <ul>
+        <li>worst-case performance: О(n<sup>2</sup>) comparisons, О(n<sup>2</sup>) swaps</li>
+        <li>best-case performance: О(n) comparisons, О(1) swaps</li>
+        <li>average performance: О(n<sup>2</sup>) comparisons, О(n<sup>2</sup>) swaps</li>
+    </ul>
+    <h3>Python implementation</h3>
+    <pre>
+def bubble_sort(array):
+    for i in range(len(array)):
+        for j in range(len(array) - i - 1):
+            if array[j + 1] < array[j]:
+                temp = array[j]
+                array[j] = array[j + 1]
+                array[j + 1] = temp
+    return array
+</pre>
+{% endblock %}

@@ -1,31 +1,14 @@
-<!doctype html>
-<html>
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46277263-3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+{% extends "layout.html" %}
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+{% block title %}Homepage{% endblock %}
 
-        gtag('js', new Date());
-
-        gtag('config', 'UA-46277263-3');
-    </script>
-    <title>Homepage</title>
-    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}"/>
-    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-<h1>Ilya Zhelyabuzhsky</h1>
-<h4>Contacts</h4>
-<ul>
-    <li>phone: +7 961 771-59-67</li>
-    <li>e-mail: <a href="mailto:zhelyabuzhsky@icloud.com">zhelyabuzhsky@icloud.com</a></li>
-    <li>twitter: @<a href="https://twitter.com/zhelyabuzhsky">zhelyabuzhsky</a></li>
-    <li>github: @<a href="https://github.com/zhelyabuzhsky">zhelyabuzhsky</a></li>
-</ul>
-</body>
-</html>
+{% block content %}
+    <h1>Ilya Zhelyabuzhsky</h1>
+    <h4>Contacts</h4>
+    <ul>
+        <li>phone: +7 961 771-59-67</li>
+        <li>e-mail: <a href="mailto:zhelyabuzhsky@icloud.com">zhelyabuzhsky@icloud.com</a></li>
+        <li>twitter: @<a href="https://twitter.com/zhelyabuzhsky">zhelyabuzhsky</a></li>
+        <li>github: @<a href="https://github.com/zhelyabuzhsky">zhelyabuzhsky</a></li>
+    </ul>
+{% endblock %}
