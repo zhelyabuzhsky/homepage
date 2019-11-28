@@ -1,4 +1,11 @@
 steps:
-  - name: "gcr.io/cloud-builders/gcloud"
+  - id: requirements
+    name: "python:3.8"
+    args: ["pip", "install", "-r", "requirements.txt", "--user"]
+  - id: check formatting with black
+    name: "python:3.8"
+    args: ["black", "--check", "."]
+  - id: deploy
+    name: "gcr.io/cloud-builders/gcloud"
     args: ["app", "deploy"]
 timeout: "1600s"
