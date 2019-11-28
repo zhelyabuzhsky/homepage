@@ -5,6 +5,7 @@ steps:
   - id: check formatting with black
     name: "python:3.8"
     args: ["black", "--check", "."]
+    waitFor: ['requirements']
   - id: deploy
     name: "gcr.io/cloud-builders/gcloud"
     args: ["app", "deploy"]
