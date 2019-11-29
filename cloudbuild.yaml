@@ -1,13 +1,4 @@
 steps:
-  - id: requirements
-    name: "python:3.8"
-    args: ["pip", "install", "-r", "requirements.txt", "--user"]
-  - id: check formatting with black
-    name: "python:3.8"
-    entrypoint: /bin/sh
-    args:
-      - -c
-      - 'black --check .'
   - id: deploy
     name: "gcr.io/cloud-builders/gcloud"
     args: ["app", "deploy"]
