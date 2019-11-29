@@ -10,12 +10,12 @@ def index():
 
 @app.route("/algorithms")
 def algorithms():
-    return render_template("algorithms.html")
+    return render_template("algorithms/algorithms.html")
 
 
 @app.route("/algorithms/bubble_sort")
 def algorithms_bubble_sort():
-    return render_template("bubble_sort.html")
+    return render_template("algorithms/bubble_sort.html")
 
 
 @app.errorhandler(404)
