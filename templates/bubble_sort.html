@@ -1,18 +1,15 @@
 {% extends "layout.html" %}
 
-{% block title %}Bubble sort{% endblock %}
+{% block title %}Сортировка пузырьком{% endblock %}
 
 {% block content %}
-    <h1>Bubble sort</h1>
-    <p>
-        <a href="https://en.wikipedia.org/wiki/Bubble_sort">https://en.wikipedia.org/wiki/Bubble_sort</a>
-    </p>
+    <h1>Сортировка пузырьком</h1>
     <ul>
-        <li>worst-case performance: О(n<sup>2</sup>) comparisons, О(n<sup>2</sup>) swaps</li>
-        <li>best-case performance: О(n) comparisons, О(1) swaps</li>
-        <li>average performance: О(n<sup>2</sup>) comparisons, О(n<sup>2</sup>) swaps</li>
+        <li>быстродействие в худшем случае: О(n<sup>2</sup>) сравнений, О(n<sup>2</sup>) обменов</li>
+        <li>быстродействие в лучшем случае: О(n) сравнений, О(1) обменов</li>
+        <li>среднее быстродействие: О(n<sup>2</sup>) сравнений, О(n<sup>2</sup>) обменов</li>
     </ul>
-    <h3>Python implementation</h3>
+    <h3>Реализация на Python</h3>
     <pre>
 def bubble_sort(array):
     for i in range(len(array)):
